@@ -1,5 +1,6 @@
 import PlaygroundSupport
 import SpriteKit
+import WatchFace
 
 let sv = SKView()
 let watchFace = FaceScene.shared!

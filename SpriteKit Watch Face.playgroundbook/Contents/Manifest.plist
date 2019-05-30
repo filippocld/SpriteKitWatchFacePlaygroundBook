@@ -3,7 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>Version</key>
-	<string>1.0</string>
+	<string>6.0</string>
+	<key>DevelopmentRegion</key>
+	<string>en</string>
+	<key>UserModuleMode</key>
+	<string>Full</string>
 	<key>Name</key>
 	<string>WatchFace</string>
 	<key>ContentIdentifier</key>
@@ -18,7 +22,10 @@
 	<array>
 		<string>WatchFace.playgroundchapter</string>
 	</array>
+	<key>UserAutoImportedAuxiliaryModules</key>
+	<array>
+	</array>
 	<key>SwiftVersion</key>
-	<string>4.2</string>
+	<string>5.0</string>
 </dict>
 </plist>

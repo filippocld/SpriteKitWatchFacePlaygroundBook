@@ -1,6 +1,7 @@
 //#-hidden-code
 import PlaygroundSupport
 import SpriteKit
+import WatchFace
 let watchFace = FaceScene.shared!
 
 //#-end-hidden-code

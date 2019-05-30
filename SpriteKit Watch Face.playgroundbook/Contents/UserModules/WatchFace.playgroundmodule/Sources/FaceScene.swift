@@ -307,7 +307,7 @@ public class FaceScene: SKScene, SKSceneDelegate {
 			if numeralStyle == .all || numeralStyle == .cardinal && i%3 == 0 {
 				let fontSize: CGFloat = 25
 				
-				let attributes: [NSAttributedStringKey: Any] = [.font: NSFont.systemFont(ofSize: fontSize, weight: .medium).smallCaps,
+				let attributes: [NSAttributedString.Key: Any] = [.font: NSFont.systemFont(ofSize: fontSize, weight: .medium).smallCaps,
 																.foregroundColor: textColor]
 				let labelText = NSAttributedString(string: (i == 0 ? 12 : i).description, attributes: attributes)
 				let numberLabel = SKLabelNode(attributedText: labelText)
@@ -564,7 +564,7 @@ public class FaceScene: SKScene, SKSceneDelegate {
 				break
 			}
 			
-			let attributes: [NSAttributedStringKey: Any] = [.font: NSFont.systemFont(ofSize: fontSize, weight: .medium).smallCaps,
+			let attributes: [NSAttributedString.Key: Any] = [.font: NSFont.systemFont(ofSize: fontSize, weight: .medium).smallCaps,
 															.foregroundColor: textColor]
 			let labelText = NSAttributedString(string: i.description, attributes: attributes)
 			let numberLabel = SKLabelNode(attributedText: labelText)
@@ -647,7 +647,7 @@ public class FaceScene: SKScene, SKSceneDelegate {
 		
 		if let markings = childNode(withName: "Markings"),
 			let dateLabel = markings.childNode(withName: "Date") as? SKLabelNode {
-			let attributes: [NSAttributedStringKey: Any] = [.font: NSFont.systemFont(ofSize: fontSize, weight: .medium).smallCaps,
+			let attributes: [NSAttributedString.Key: Any] = [.font: NSFont.systemFont(ofSize: fontSize, weight: .medium).smallCaps,
 															.foregroundColor: colorTheme.textColor]
 			let labelText = NSAttributedString(string: dateString, attributes: attributes)
 			dateLabel.attributedText = labelText
@@ -656,7 +656,7 @@ public class FaceScene: SKScene, SKSceneDelegate {
 		if let markings = childNode(withName: "Markings Alternate"),
 			let dateLabel = markings.childNode(withName: "Date") as? SKLabelNode,
 			let alternateTextColor = colorTheme.alternateTextColor {
-			let attributes: [NSAttributedStringKey: Any] = [.font: NSFont.systemFont(ofSize: fontSize, weight: .medium).smallCaps,
+			let attributes: [NSAttributedString.Key: Any] = [.font: NSFont.systemFont(ofSize: fontSize, weight: .medium).smallCaps,
 															.foregroundColor: alternateTextColor]
 			let labelText = NSAttributedString(string: dateString, attributes: attributes)
 			dateLabel.attributedText = labelText
